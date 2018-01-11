@@ -18,10 +18,10 @@ span
     = QuestionsPresenter(@application)
     = RecentProjectsPresenter(@application)
 
-    section.featured-projects
-      h2 Featured
+    section.featured.featured-collections
+      h2 Feature: Rise of the Bots!
       ul
-        = @featuredProjects
+        = @featuredCollections
 
     - application = @application
     - @randomCategories().forEach (category) ->
